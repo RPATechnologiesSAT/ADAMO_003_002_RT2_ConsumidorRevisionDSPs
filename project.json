@@ -1,5 +1,5 @@
 {
-  "name": "RPATechnologies_RT2_Template",
+  "name": "ADAMO_003_002_RT2_ConsumidorRevisionDSPs",
   "projectId": "e0398765-2793-4ac2-9228-15a99ae92054",
   "description": "Performer - Template Framework prepared to consume transaction items from Orquestrator queues.",
   "main": "Main.xaml",
@@ -73,6 +73,7 @@
       ]
     },
     "fileInfoCollection": [],
+    "modernBehavior": false,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",

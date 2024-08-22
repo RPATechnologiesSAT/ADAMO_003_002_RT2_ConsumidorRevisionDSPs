@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>831,1170</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1488,899</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -131,7 +131,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID4}" sap2010:Annotation.AnnotationText="-Proceso: Etapa X - [NombreProceso]&#xA;&#xA;   Breve descripción del proceso...&#xA;&#xA;-Framework:&#xA;El proceso transaccional solo finalizará su ejecución cuando se cumpla alguna de las siguientes condiciones:&#xA;&#xA;- Error obtención items de cola.&#xA;- No hay mas items pendientes en la cola.&#xA;- El numero total de SystemException ha alcanzado el límite establecido en el config de forma acumulada." DisplayName="RPATechnologies_RT2_Template" sap:VirtualizedContainerService.HintSize="772,834" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID4}" sap2010:Annotation.AnnotationText="-Proceso: Etapa X - [NombreProceso]&#xA;&#xA;   Breve descripción del proceso...&#xA;&#xA;-Framework:&#xA;El proceso transaccional solo finalizará su ejecución cuando se cumpla alguna de las siguientes condiciones:&#xA;&#xA;- Error obtención items de cola.&#xA;- No hay mas items pendientes en la cola.&#xA;- El numero total de SystemException ha alcanzado el límite establecido en el config de forma acumulada." DisplayName="ADAMO_003_002_RT2_ConsumidorRevisionDSPs" sap:VirtualizedContainerService.HintSize="772,834" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1354,7 +1354,7 @@
     </State>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
-    <State x:Name="__ReferenceID4" sap2010:Annotation.AnnotationText="Se obtienen ConfigFramework y ConfigProcess" DisplayName="Configuration State" sap:VirtualizedContainerService.HintSize="687,3044" sap2010:WorkflowViewState.IdRef="State_2">
+    <State x:Name="__ReferenceID4" sap2010:Annotation.AnnotationText="Se obtienen ConfigFramework y ConfigProcess" DisplayName="Configuration State" sap:VirtualizedContainerService.HintSize="254,104" sap2010:WorkflowViewState.IdRef="State_2">
       <State.Entry>
         <TryCatch DisplayName="Configuration State" sap:VirtualizedContainerService.HintSize="641,2625" sap2010:WorkflowViewState.IdRef="TryCatch_2">
           <sap:WorkflowViewStateService.ViewState>
