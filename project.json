@@ -4,12 +4,12 @@
   "description": "Performer - Template Framework prepared to consume transaction items from Orquestrator queues.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.22.1-preview]",
-    "UiPath.Mail.Activities": "[1.23.10]",
-    "UiPath.System.Activities": "[24.10.3]",
-    "UiPath.Testing.Activities": "[23.10.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.10.11]",
-    "UiPath.WebAPI.Activities": "[1.13.3]"
+    "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.Testing.Activities": "[24.10.1]",
+    "UiPath.UIAutomation.Activities": "[24.10.3]",
+    "UiPath.WebAPI.Activities": "[1.21.0]"
   },
   "webServices": [],
   "entitiesStores": [],

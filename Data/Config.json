@@ -6,7 +6,7 @@
         },
 	    {
             "Name": "OrchestratorQueueName",
-            "Value": "QueueTest",
+            "Value": "RevisiónDSPs",
             "Description": "Cola de ejecución de la que se recogerán los items que van a ser tratados."
         },
         {
@@ -38,20 +38,29 @@
             "Name": "MaxTotalSystems",
             "Value": 3,
             "Description": "Número total de errores máximos permitidos. Cuando se alcance este número de errores durante el procesamiento de items de forma acumulada, la ejecución finalizará."
+        },
+		{
+		    "_Importante" : "'Nombre del asset de tipo credential que guarda las credenciales de inicio de sesión en Portanet",
+            "Name": "PortanetCredentialsAssetName",
+            "Value": "Credentials_Portanet",
+            "Description": "Nombre Asset Credenciales web Portanet" 
+        },
+		{
+		    "_Importante" : "'Nombre del asset de tipo credential que guarda las credenciales de inicio de sesión en OTRS",
+            "Name": "OTRSCredentialsAssetName",
+            "Value": "Credentials_OTRS",
+            "Description": "Nombre Asset Credenciales web OTRS" 
         }
     ],
 
     "Assets": [
         {
-            "Name": "NombreAssetEnOrquestador",
-            "Description": "Descripcion del Asset"
-        }
-    ],
- 
-    "Credentials": [
-        {
-            "Name": "NombreCredencialEnOrquestador",
-            "OrchestratorFolder": "Shared"
-        }
+            "Name": "URL_Portanet",
+            "Description": "URL de acceso a la web de Portanet"
+        },
+		{
+			"Name":"URL_OTRS",
+			"Description":"URL de acceso a la web de OTRS"
+		}
     ]
 }
