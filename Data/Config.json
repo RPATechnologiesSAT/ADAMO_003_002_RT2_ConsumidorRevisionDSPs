@@ -1,12 +1,12 @@
 ﻿{"Settings": [
         {
-            "Name": "OrchestratorQueueFolder",
+            "Name": "OrchestratorFolderName",
             "Value": "Shared",
             "Description": "Carpeta Orquestador"
         },
 	    {
             "Name": "OrchestratorQueueName",
-            "Value": "RevisiónDSPs",
+            "Value": "RevisionDSPs",
             "Description": "Cola de ejecución de la que se recogerán los items que van a ser tratados."
         },
         {
