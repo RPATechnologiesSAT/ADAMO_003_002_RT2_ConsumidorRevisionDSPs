@@ -61,6 +61,10 @@
 		{
 			"Name":"URL_OTRS",
 			"Description":"URL de acceso a la web de OTRS"
+		},
+		{
+			"Name":"DestinatariosRevisionDSPs",
+			"Description":"Listado destinatarios del correo"
 		}
     ]
 }

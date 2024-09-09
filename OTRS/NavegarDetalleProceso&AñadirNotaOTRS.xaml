@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1404,1109</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1794,3339</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,13 +109,13 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="552,1044" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,3274" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="490,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,2801" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -124,7 +124,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2551" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193637111-71950315J - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2551" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -222,7 +222,7 @@
             </ActivityAction>
           </uix:NApplicationCard.Body>
           <uix:NApplicationCard.TargetApp>
-            <uix:TargetApp Area="-8, -8, 1910, 911" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJxSURBVDhPY0AHZfsvyhTvP7ei7MgNXqgQw9SEqKap8TGRUC5+0LD/Kk/ZgbM3Svef9QDxO/38eIEGXJmWEmMLVkAMKNt/dkn5wQtrQOzpMVHRIAMaQkPZwJLEgIq9F9xKD17+1nTkou3MqOAz0+Iiu6BSRIL//xkLz97bXDR51sd+f48H8yL8ZaEyKOA/AwMjg1FY1lzj4Mw5phHZzkAxRogU0Bs1jYkhcUn/4zJzN0KFwOCAoYflLkO3ifuMPHdu03cxZDAOz3IDGxKW9dgoIveUcnSx5/rcDLMFkcGPy9LTn2cfvPS37OH7vEu6jsYHdF127jJw+7bD0GPHbkPPuI3WfvCYYpAJzZDWjcqfrOoc/N/H2vrXpIjgMwdbqmWL77xtTm6b/r9F0+b3fm2HYyf4NYyhWlDBiWhPvuXp8c1FPh7/tUzt/msHJh+zTawUvaxuV92vbvs/Ia/+X8mRq4fTXvzUhWqBgBlJkZbTkmJ6ZyXGPZyfGndvS2ZcjFVkgZNaZP5LZ4eA+3u07P6d07QrL7v2wqLk5PXt5QfOfyzdf25T+aGLESU7L3IzTImLXjo7KW7zrKTYhI60UH6ouQzBDsHxlmoG/0O1zHdAhcCg+MB509KD57vLD1/dVbzvkjEDrgRyXsd5YY2x0w/5oJQnerElilBhBABGdcP//0xQHirYbeJpuE/f5eMua38vzaics8ZhGVOhUsSBXYbuPduN3LeD2Hrh2RHGoWkPHEKzeMCShMBVbW22nYbuJ3cbeQSB+EDncxuGZl03Cs0CZy6CYIexu+ROfbc1+w0CBKBCDEbhGS1GEVkJUC4SYGAAAO3L8scX6PyuAAAAAElFTkSuQmCC" InformativeScreenshot="ca0651be63b736c3324240bb8c5fe54d.jpg" Selector="&lt;html app='chrome.exe' url='*support.adamo.es*' /&gt;" Title="Dashboard - Managed OTRS" />
+            <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJxSURBVDhPY0AHZfsvyhTvP7ei7MgNXqgQw9SEqKap8TGRUC5+0LD/Kk/ZgbM3Svef9QDxO/38eIEGXJmWEmMLVkAMKNt/dkn5wQtrQOzpMVHRIAMaQkPZwJLEgIq9F9xKD17+1nTkou3MqOAz0+Iiu6BSRIL//xkLz97bXDR51sd+f48H8yL8ZaEyKOA/AwMjg1FY1lzj4Mw5phHZzkAxRogU0Bs1jYkhcUn/4zJzN0KFwOCAoYflLkO3ifuMPHdu03cxZDAOz3IDGxKW9dgoIveUcnSx5/rcDLMFkcGPy9LTn2cfvPS37OH7vEu6jsYHdF127jJw+7bD0GPHbkPPuI3WfvCYYpAJzZDWjcqfrOoc/N/H2vrXpIjgMwdbqmWL77xtTm6b/r9F0+b3fm2HYyf4NYyhWlDBiWhPvuXp8c1FPh7/tUzt/msHJh+zTawUvaxuV92vbvs/Ia/+X8mRq4fTXvzUhWqBgBlJkZbTkmJ6ZyXGPZyfGndvS2ZcjFVkgZNaZP5LZ4eA+3u07P6d07QrL7v2wqLk5PXt5QfOfyzdf25T+aGLESU7L3IzTImLXjo7KW7zrKTYhI60UH6ouQzBDsHxlmoG/0O1zHdAhcCg+MB509KD57vLD1/dVbzvkjEDrgRyXsd5YY2x0w/5oJQnerElilBhBABGdcP//0xQHirYbeJpuE/f5eMua38vzaics8ZhGVOhUsSBXYbuPduN3LeD2Hrh2RHGoWkPHEKzeMCShMBVbW22nYbuJ3cbeQSB+EDncxuGZl03Cs0CZy6CYIexu+ROfbc1+w0CBKBCDEbhGS1GEVkJUC4SYGAAAO3L8scX6PyuAAAAAElFTkSuQmCC" InformativeScreenshot="20692af1d7f9c5302f98c6f59017a207.jpg" Selector="&lt;html app='chrome.exe' title='* Managed OTRS' /&gt;" Title="Dashboard - Managed OTRS" Url="https://support.adamo.es/*" />
           </uix:NApplicationCard.TargetApp>
         </uix:NApplicationCard>
       </TryCatch.Try>

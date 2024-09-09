@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>672,3851</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1768,3953</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>RellenarNotaOTRS_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -125,14 +125,14 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RellenarNotaOTRS" sap:VirtualizedContainerService.HintSize="682,3786" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RellenarNotaOTRS" sap:VirtualizedContainerService.HintSize="682,3888" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'RellenarNotaOTRS' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="620,3313" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="620,3415" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,13 +140,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193550793-71901897X - Managed OTRS" sap:VirtualizedContainerService.HintSize="582,3063" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193550793-71901897X - Managed OTRS" sap:VirtualizedContainerService.HintSize="582,3165" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,2846" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,2908" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -298,7 +298,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="486,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
+                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DEBUUUUUUUUG" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="486,188" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="ddb28346-2f01-42a9-aa2e-2f88e7dd17a4" CvElementArea="1674, 795, 84, 37" CvTextArea="1696, 807, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1697, 805, 38, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                 Cancel                 ' parentid='Layout__Content__Main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Cancel                 ' parentid='Layout__Content__Main' tag='SPAN' type='' class='' check:innerText='Cancel' /&gt;" Guid="430db712-1ab5-4d80-9f36-54dc989dc8f2" InformativeScreenshot="da0ff5c5c86db182b4879bc99c351cc5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -308,8 +308,13 @@
                       </uix:TargetAnchorable.Anchors>
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="486,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Timeout="5" Version="V3">
+                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DEBUUUUUUUUG" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="486,188" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Timeout="5" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="cff7ee3d-b8dc-4660-9075-c8344a7739b6" CvElementArea="1091, 325, 81, 37" CvTextArea="1121, 337, 21, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1123, 335, 18, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                 Yes                 ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Yes                 ' tag='SPAN' type='' class='' check:innerText='Yes' /&gt;" Guid="9316bfe2-9d26-4082-b340-9d12ee41b5b4" InformativeScreenshot="2be419d6086200487e9edea100ab8819.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -319,6 +324,11 @@
                       </uix:TargetAnchorable.Anchors>
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nota rellenada y guardada correctamente.&quot;]" />
               </Sequence>

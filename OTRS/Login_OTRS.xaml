@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1306,3555</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1306,3515</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_OTRS_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -97,7 +97,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login_OTRS" sap:VirtualizedContainerService.HintSize="1316,3490" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_OTRS" sap:VirtualizedContainerService.HintSize="1316,3450" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="User" />
       <Variable x:TypeArguments="ss:SecureString" Name="Pass" />
@@ -115,7 +115,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1254,3017" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1254,2977" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,7 +123,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1216,2767" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence sap:VirtualizedContainerService.HintSize="1216,2727" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,13 +137,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotCredential>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Login - Managed OTRS" sap:VirtualizedContainerService.HintSize="1154,2473" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Login - Managed OTRS" sap:VirtualizedContainerService.HintSize="1154,2433" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1120,2256" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1120,2216" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="in_Username" />
                   </Sequence.Variables>
@@ -332,7 +332,7 @@
                       </uix:NNavigateBrowser>
                     </PickBranch>
                   </Pick>
-                  <uix:NCheckState sap2010:Annotation.AnnotationText="Si tras completar el modulo d elogín no se encuentra la pantalla de inicio, el Throw + Retry volverá a realizar el intento de login" DisplayName="Check App State 'Dashboard'" sap:VirtualizedContainerService.HintSize="1058,676" sap2010:WorkflowViewState.IdRef="NCheckState_4" Version="V1">
+                  <uix:NCheckState sap2010:Annotation.AnnotationText="Si tras completar el modulo d elogín no se encuentra la pantalla de inicio, el Throw + Retry volverá a realizar el intento de login" DisplayName="Check App State 'Dashboard'" sap:VirtualizedContainerService.HintSize="1058,636" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
@@ -362,13 +362,7 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CvElementArea="136, 193, 16, 21" CvTextArea="155, 195, 73, 14" CvTextArgument="Dashboard" CvType="ArrowButton" DesignTimeRectangle="139, 190, 89, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ml-1 Breadcrumb__LastCrumb' aaname='             Dashboard         ' check:innerText='Dashboard' /&gt;" Guid="9fa58a5c-bbe4-48e7-a785-542a4efe0039" InformativeScreenshot="5b656ce7bbeab8f44eaeba05f6aa2eeb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CvElementArea="116, 191, 22, 21" CvType="Icon" DesignTimeRectangle="119, 190, 16, 24" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' type='' class='CommonIcon CommonIcon__Regular CommonIcon__Regular--Normal CommonIcon__Regular--HouseChimney2' aaname='' /&gt;" Guid="f9587542-6a91-401f-8bf0-1f3067097c72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEvSURBVEhLY/j+4/d/auJRAynHA2Dgm2v/F+Wl/4/MW/j/0hss8mgYv4FAw+Ykhf/PXn77/43lZf8dk2b/v/Ts6/9Xbz5A8VcMPbgNhBm29ilc7N7asv/WDkH/rb2BLg5P/O/oMO3/GWQ9QIzdQCyGwTDIULBL31z430mUgXgMg2GIoYX/4wka+Ob2/xUZMf8L8RgGw/fW1gC93Pb/AFpEIQwkwTAYBhnqDvY+Qgxu4BYSDYNhsKEZ2/4/gfLhBn74BEoCD/6vq9/2/x5UDIIRyeQDijhCLUQvRBwtUtBj7vX/XcXh/93DQckk5r9j8YH/r3CqhWACBiLz8ckh8JA0sAeYtmB59cD/ZhQDcckhMJqBwLSYBIoAJJy0+v8NgnIIjGYg5XjUQMrxYDfw938AEicc75AyGwoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
+                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" DesignTimeRectangle="38, 214, 93, 42" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*I Am Watching*' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 I Am Watching             ' tag='SPAN' type='' class='text-truncate ItemLabel' check:innerText='I Am Watching' /&gt;" Guid="d6cec746-d5b7-436f-b4f7-1e2740a0108c" ImageBase64="" InformativeScreenshot="0476420c37265c518d123b2bb911124d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
