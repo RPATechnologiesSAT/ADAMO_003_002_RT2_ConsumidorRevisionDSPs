@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,3339</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1421,3005</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,14 +109,14 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,3274" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,2940" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,2801" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,2467" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,59 +124,81 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193637111-71950315J - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2551" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193637111-71950315J - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2217" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2000" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Navegando a ticket en OTRS...&quot;]" />
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="867, 147, 16, 21" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="3f6bba7257dbfceb44f579f6ad8b3914.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Text="[in_IDProceso]" Version="V3">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="df9c98e4-335d-4209-b0d4-e7a3963d5fce" CvTextArea="610, 217, 117, 15" CvTextArgument="Type here to search..." CvType="Text" DesignTimeRectangle="595, 199, 818, 51" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='autosuggest__input--open bv-no-focus-ring pl-3 pr-5 py-2 Search__Input' placeholder='Type here to search...' aaname='Type here to search...' /&gt;" Guid="83199985-e388-4bb6-9bfb-1f7b3426907e" InformativeScreenshot="3671d0028307101c3ea954aaf026d4a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
-                <uix:NCheckState DisplayName="Check App State 'Note Article'" sap:VirtualizedContainerService.HintSize="954,672" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
-                  <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ticket encontrado en OTRS.&quot;]" />
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Note Article'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="e6589ee0-519c-449d-aa65-b6610381eddb" CvElementArea="1348, 291, 49, 22" CvTextArea="610, 294, 781, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="596, 284, 816, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:innerText='Note&amp;#xD;&amp;#xA;Article' /&gt;" Guid="a3455f52-a0c4-43e6-91e2-f3f7343378d1" InformativeScreenshot="82c8006be3759b4845afa6d4f0571d95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                    </Sequence>
-                  </uix:NCheckState.IfExists>
-                  <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado resultados en OTRS para el ID de Proceso: &quot;+in_IDProceso)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
-                    </Sequence>
-                  </uix:NCheckState.IfNotExists>
-                  <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="8979ecc1-cabc-4d1f-8a64-ff9e8a27b1ce" CvElementArea="1336, 291, 50, 22" CvTextArea="605, 294, 774, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="591, 284, 809, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:text='Note&amp;#xD;&amp;#xA;              &amp;#xD;&amp;#xA;        Article' /&gt;" Guid="47a9b720-9606-4708-90c4-b3b4c01e6f68" ImageBase64="" InformativeScreenshot="cf6b34805db48c6b1c2a271347493040.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NCheckState.Target>
-                </uix:NCheckState>
+                <ui:RetryScope DisplayName="Retry Scope - navegar Nota" sap:VirtualizedContainerService.HintSize="954,793" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,618" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="867, 147, 16, 21" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="3f6bba7257dbfceb44f579f6ad8b3914.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Text="[in_IDProceso]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="df9c98e4-335d-4209-b0d4-e7a3963d5fce" CvTextArea="610, 217, 117, 15" CvTextArgument="Type here to search..." CvType="Text" DesignTimeRectangle="631, 199, 818, 51" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='autosuggest__input--open bv-no-focus-ring pl-3 pr-5 py-2 Search__Input' placeholder='Type here to search...' aaname='Type here to search...' /&gt;" Guid="83199985-e388-4bb6-9bfb-1f7b3426907e" ImageBase64="" InformativeScreenshot="8d7971de147bbba35672f9107084128d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NCheckState DisplayName="Check App State 'Note Article'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ticket encontrado en OTRS.&quot;]" />
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Note Article'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="e6589ee0-519c-449d-aa65-b6610381eddb" CvElementArea="1348, 291, 49, 22" CvTextArea="610, 294, 781, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="596, 284, 816, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:innerText='Note&amp;#xD;&amp;#xA;Article' /&gt;" Guid="a3455f52-a0c4-43e6-91e2-f3f7343378d1" InformativeScreenshot="82c8006be3759b4845afa6d4f0571d95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado resultados en OTRS para el ID de Proceso: &quot;+in_IDProceso)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="8979ecc1-cabc-4d1f-8a64-ff9e8a27b1ce" CvElementArea="1336, 291, 50, 22" CvTextArea="605, 294, 774, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="591, 284, 809, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:text='Note&amp;#xD;&amp;#xA;              &amp;#xD;&amp;#xA;        Article' /&gt;" Guid="47a9b720-9606-4708-90c4-b3b4c01e6f68" ImageBase64="" InformativeScreenshot="cf6b34805db48c6b1c2a271347493040.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Actions'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="7929ce43-ac8d-4ba1-88db-756a3e46d8de" CvTextArea="117, 233, 44, 12" CvTextArgument="Actions" CvType="Text" DesignTimeRectangle="119, 231, 41, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' type='' aaname='Actions' check:innerText='Actions' /&gt;" Guid="bcaa77c2-cb9d-4616-8b59-1cec9c8daf74" InformativeScreenshot="a0a6e3ca5cc2f7db8ab290187f1b571a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />

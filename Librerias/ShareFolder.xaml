@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>944,2648</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1447,2936</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ShareFolder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -56,6 +56,8 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -135,7 +137,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Variable boolean&#xA;&#xA;True --&gt; Conecta&#xA;False --&gt; Desconecta" DisplayName="ShareFolder" sap:VirtualizedContainerService.HintSize="710,2583" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Variable boolean&#xA;&#xA;True --&gt; Conecta&#xA;False --&gt; Desconecta" DisplayName="ShareFolder" sap:VirtualizedContainerService.HintSize="710,2871" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_nombreDocumento" />
       <Variable x:TypeArguments="x:String" Name="str_User" />
@@ -153,7 +155,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="648,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;--- Iniciando módulo 'ShareFolder' ---&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="648,2038" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="648,2326" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,14 +163,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="610,1788" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence sap:VirtualizedContainerService.HintSize="610,2076" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="GENERANDO Y EJECUTANDO SCRIPT" sap:VirtualizedContainerService.HintSize="548,81" sap2010:WorkflowViewState.IdRef="Sequence_28">
+          <Sequence DisplayName="GENERANDO Y EJECUTANDO SCRIPT" sap:VirtualizedContainerService.HintSize="496,717" sap2010:WorkflowViewState.IdRef="Sequence_28">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -301,7 +303,7 @@ echo Conexión exitosa.
                 <InArgument x:TypeArguments="x:String">[Path.Combine(in_PathScripts,str_nombreDocumento)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateTextScript.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modulos\CreateTextScript.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateTextScript - Invoke Workflow File (Librerias\CreateTextScript.xaml)" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Librerias\CreateTextScript.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_ExtensionInicial">txt</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_ExtensionFinal">bat</InArgument>
@@ -311,7 +313,7 @@ echo Conexión exitosa.
             </ui:InvokeWorkflowFile>
             <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[str_RutaArchivo]" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="StartProcess_3" />
           </Sequence>
-          <Sequence DisplayName="VERIFICACIONES" sap:VirtualizedContainerService.HintSize="548,1556" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="VERIFICACIONES" sap:VirtualizedContainerService.HintSize="548,1844" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -327,7 +329,7 @@ echo Conexión exitosa.
                 <InArgument x:TypeArguments="x:Boolean">[str_nombreDocumento.ToUpper.Equals("CONECTARSHAREFOLDER.BAT")]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[boo_Process]" DisplayName="Conectado?" sap:VirtualizedContainerService.HintSize="486,1193" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[boo_Process]" DisplayName="Conectado?" sap:VirtualizedContainerService.HintSize="486,1481" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -335,13 +337,13 @@ echo Conexión exitosa.
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="452,1011" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <Sequence sap:VirtualizedContainerService.HintSize="452,1070" sap2010:WorkflowViewState.IdRef="Sequence_24">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Directory.Exists(in_LetraShareFolder)]" DisplayName="existe carpeta sobre la que nos vamos a conectar?" sap:VirtualizedContainerService.HintSize="410,923" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[Directory.Exists(in_LetraShareFolder)]" DisplayName="existe carpeta sobre la que nos vamos a conectar?" sap:VirtualizedContainerService.HintSize="410,982" sap2010:WorkflowViewState.IdRef="If_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -359,18 +361,16 @@ echo Conexión exitosa.
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="376,512" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,571" sap2010:WorkflowViewState.IdRef="Sequence_30">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;No se ha podido conectar con el ShareFolder&quot;]" />
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\OpenFolderOrFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Modulos\OpenFolderOrFile.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="OpenFolderOrFile - Invoke Workflow File (Librerias\OpenFolderOrFile.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Librerias\OpenFolderOrFile.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_Path">
-                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_LetraShareFolder" />
-                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Path">[in_LetraShareFolder]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                         <Throw Exception="[New BusinessRuleException(&quot;The connection process with the network folder could not be performed correctly.&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_4" />
