@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Login_OTRS" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_OTRS" this:Login_OTRS.in_URL="support.adamo.es/agent/login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_URL" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1768,2941</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1794,2345</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_OTRS_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -98,7 +98,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login_OTRS" sap:VirtualizedContainerService.HintSize="1332,2876" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_OTRS" sap:VirtualizedContainerService.HintSize="1756,2200" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="User" />
       <Variable x:TypeArguments="ss:SecureString" Name="Pass" />
@@ -116,7 +116,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Credentials_OTRS" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1270,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Pass]" Username="[User]">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Credentials_OTRS" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1694,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Pass]" Username="[User]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -124,13 +124,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Login - Managed OTRS" sap:VirtualizedContainerService.HintSize="1270,1635" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Login - Managed OTRS" sap:VirtualizedContainerService.HintSize="1694,1635" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1236,1418" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1660,1418" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="in_Username" />
             </Sequence.Variables>
@@ -139,7 +139,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'about:blank'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1174,52" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Timeout="2" Version="V1">
+            <uix:NCheckState DisplayName="Check App State 'about:blank'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1598,52" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Timeout="2" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
@@ -176,7 +176,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <Pick sap:VirtualizedContainerService.HintSize="1174,1211" sap2010:WorkflowViewState.IdRef="Pick_1">
+            <Pick sap:VirtualizedContainerService.HintSize="1598,1211" sap2010:WorkflowViewState.IdRef="Pick_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -191,7 +191,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <PickBranch.Trigger>
-                  <uix:NCheckState DisplayName="Check App State 'IMG'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1">
+                  <uix:NCheckState DisplayName="Check App State 'IMG'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Timeout="10" Version="V1">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <sap:WorkflowViewStateService.ViewState>
@@ -212,7 +212,7 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/login" DesignTimeRectangle="884, 205, 125, 47" DesignTimeScaleFactor="1.100000023841858" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' aaname='Logo' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' aaname='Logo' type='' class='mx-auto d-block' /&gt;" Guid="5e72953a-4e1a-4a58-bf6a-f8bdd36a9a61" InformativeScreenshot="051738c7227418b33e270dc37c049c0f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/login" CVScreenId="e47e9bd5-b084-46fd-8564-134127652d5f" CvElementArea="699, 579, 538, 45" CvType="InputBox" DesignTimeRectangle="702, 582, 532, 40" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' name='Username' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='Username' type='text' class='Form__Input form-control' placeholder='User name*' aaname='Username' /&gt;" Guid="b63cd7d2-d977-4ba4-89f7-1c58c2b8e286" InformativeScreenshot="fddc0387440ecf974320bcadbab11e9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -272,7 +272,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <PickBranch.Trigger>
-                  <uix:NCheckState DisplayName="Check App State 'Dashboard'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Version="V1">
+                  <uix:NCheckState DisplayName="Check App State 'Dashboard'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="6b828eeb-4397-437a-8c37-9829a2326838" Timeout="10" Version="V1">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
@@ -292,7 +292,13 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" DesignTimeRectangle="152, 197, 98, 26" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ml-1 Breadcrumb__LastCrumb' aaname='             Dashboard         ' check:innerText='Dashboard' /&gt;" Guid="62820c8d-7ff8-4973-9386-db4845151b5c" InformativeScreenshot="5a8190f1e8df694c68f14f9425c05e98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" DesignTimeRectangle="152, 197, 98, 26" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='*Dashboard*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' aaname='*Dashboard*' type='' class='ml-1 Breadcrumb__LastCrumb' check:text='Dashboard' /&gt;" Guid="62820c8d-7ff8-4973-9386-db4845151b5c" InformativeScreenshot="097186cb4827de7488c36750a393ca59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="130, 197, 18, 26" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' type='' class='CommonIcon CommonIcon__Regular CommonIcon__Regular--Normal CommonIcon__Regular--HouseChimney2' aaname='' /&gt;" Guid="da909993-5840-4708-9580-a1c3957b327b" SearchSteps="Selector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
                     </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -302,7 +308,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
                 </PickBranch.Trigger>
-                <Sequence sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence sap:VirtualizedContainerService.HintSize="450,508" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -317,7 +323,14 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NNavigateBrowser>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
                 </Sequence>
+              </PickBranch>
+              <PickBranch sap:VirtualizedContainerService.HintSize="384,1164" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+                <PickBranch.Trigger>
+                  <Delay Duration="00:00:09" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                </PickBranch.Trigger>
+                <Throw Exception="[New Exception(&quot;Error navegación OTR - No aparece la ventana de inicio 'Dashboard'&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </PickBranch>
             </Pick>
           </Sequence>
@@ -333,53 +346,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NCheckState sap2010:Annotation.AnnotationText="Si tras completar el modulo d elogín no se encuentra la pantalla de inicio, el Throw + Retry volverá a realizar el intento de login" DisplayName="Check App State 'Dashboard'" sap:VirtualizedContainerService.HintSize="1270,636" sap2010:WorkflowViewState.IdRef="NCheckState_4" Version="V1">
-      <uix:NCheckState.IfExists>
-        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_11">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Completado&quot;]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:LogMessage>
-        </Sequence>
-      </uix:NCheckState.IfExists>
-      <uix:NCheckState.IfNotExists>
-        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,388" sap2010:WorkflowViewState.IdRef="Sequence_12">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Error navegación OTR - No aparece la ventana de inicio 'Dashboard'&quot;]" />
-          <Throw DisplayName="Throw SE" Exception="[New Exception(&quot;Error navegación OTR - No aparece la ventana de inicio 'Dashboard'&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
-        </Sequence>
-      </uix:NCheckState.IfNotExists>
-      <uix:NCheckState.Target>
-        <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CvElementArea="136, 193, 16, 21" CvTextArea="155, 195, 73, 14" CvTextArgument="Dashboard" CvType="ArrowButton" DesignTimeRectangle="139, 190, 89, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ml-1 Breadcrumb__LastCrumb' aaname='             Dashboard         ' check:innerText='Dashboard' /&gt;" Guid="9fa58a5c-bbe4-48e7-a785-542a4efe0039" InformativeScreenshot="5b656ce7bbeab8f44eaeba05f6aa2eeb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
-          <uix:TargetAnchorable.Anchors>
-            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-              <uix:Target CvElementArea="116, 191, 22, 21" CvType="Icon" DesignTimeRectangle="119, 190, 16, 24" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='Layout__Content__Main' tag='DIV' type='' class='CommonIcon CommonIcon__Regular CommonIcon__Regular--Normal CommonIcon__Regular--HouseChimney2' aaname='' /&gt;" Guid="4d857e6f-b1ef-40e5-b228-61f7dda8f8bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEvSURBVEhLY/j+4/d/auJRAynHA2Dgm2v/F+Wl/4/MW/j/0hss8mgYv4FAw+Ykhf/PXn77/43lZf8dk2b/v/Ts6/9Xbz5A8VcMPbgNhBm29ilc7N7asv/WDkH/rb2BLg5P/O/oMO3/GWQ9QIzdQCyGwTDIULBL31z430mUgXgMg2GIoYX/4wka+Ob2/xUZMf8L8RgGw/fW1gC93Pb/AFpEIQwkwTAYBhnqDvY+Qgxu4BYSDYNhsKEZ2/4/gfLhBn74BEoCD/6vq9/2/x5UDIIRyeQDijhCLUQvRBwtUtBj7vX/XcXh/93DQckk5r9j8YH/r3CqhWACBiLz8ckh8JA0sAeYtmB59cD/ZhQDcckhMJqBwLSYBIoAJJy0+v8NgnIIjGYg5XjUQMrxYDfw938AEicc75AyGwoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
-            </scg:List>
-          </uix:TargetAnchorable.Anchors>
-        </uix:TargetAnchorable>
-      </uix:NCheckState.Target>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </uix:NCheckState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1270,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;------- Finalizando secuencia 'Login_OTRS' -------&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1694,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;------- Finalizando secuencia 'Login_OTRS' -------&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
