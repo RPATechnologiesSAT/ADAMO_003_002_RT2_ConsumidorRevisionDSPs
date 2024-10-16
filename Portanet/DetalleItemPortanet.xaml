@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1768,4035</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>792,4075</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DetalleItem_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,14 +119,14 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DetalleItem" sap:VirtualizedContainerService.HintSize="802,3970" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DetalleItem" sap:VirtualizedContainerService.HintSize="802,4010" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="740,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DetalleItem_Portanet' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="740,3497" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="740,3537" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,7 +134,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: Visualización y Generación de Mensajes" sap:VirtualizedContainerService.HintSize="702,3247" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c1ba5612-1843-4a05-a4d5-5099c4d3df39">
+        <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: Visualización y Generación de Mensajes" sap:VirtualizedContainerService.HintSize="702,3287" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c1ba5612-1843-4a05-a4d5-5099c4d3df39">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -147,7 +147,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Recogiendo información adicional en Portanet...&quot;]" />
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG Image4'" sap:VirtualizedContainerService.HintSize="606,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG Image4'" sap:VirtualizedContainerService.HintSize="606,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" DesignTimeRectangle="1063, 223, 109, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl id='Image4' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='Image4' type='' tag='IMG' class='' aaname='ir a rol receptor' /&gt;" Guid="01fb0eb7-57aa-409b-8fd7-94d9ec386fa7" InformativeScreenshot="bc4b9cd78dbe021760b83c77ac99d825.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
